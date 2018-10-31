@@ -1,0 +1,13 @@
+개발환경구축
+1. Java
+2. Android Studio
+Android Library Update(Optional)
+3. Android SDK
+4. Emulater 
+- Android Vitual Device
+- 3rd Party Emulater: 지니모션
+
+or 안드로이드 스마트폰 (개발자 옵션 -> usb디버깅 켜기)
+> usb 케이블로 연결 후 제어판 인식여부 확인
+> 휴대폰 드라이버 설치
+> 휴대전화 데이터에 접근 허용

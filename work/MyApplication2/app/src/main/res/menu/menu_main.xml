@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.co.myapplication2.MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_say"
+        android:orderInCategory="99"
+        android:title="@string/action_say"
+        app:showAsAction="never" />
+</menu>
+
+<!--
+
+android:title="@string/action_settings" : strings.xml 에 몰아넣고 관리하자
+
+android:orderInCategory="99" : 우선순위
+
+-->
