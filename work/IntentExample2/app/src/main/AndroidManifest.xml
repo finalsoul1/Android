@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.co.intentexample2">
+
+
+    <!--
+        사용 퍼미션: 사용자의 동의없이 개발자가 무언가를 수행할 때 사용자에게 피해를 줄 수 있는
+        기능은 제공하지 말아야 한다. 사용자에게 피해를 주는 기능은 반드시 신고한 다음에
+        이용할 수 있습니다.
+    -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.DIAL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SubActivity"></activity>
+    </application>
+
+</manifest>

@@ -40,3 +40,53 @@ instant Run : 앱을 새로 설치하지않고 변경부분만 적용하는 방법
 2. 연결장치에 설치
 3. 앱을 기동
 
+
+웹은 페이지 재활용이 없다 (도메인이 바뀔때마다 새로 만들어 띄운다)
+안드로이드 앱은 백스택을 이용해 액티비티를 재활용한다
+
+
+인텐트의 플래그
+
+Activity1 >> Activity2 >> Activity3
+
+ #2              #1	         #1
+ #3 	     #3	         #3
+
+매니페스토 에 <액티비티 android:label=""> 에 지정해주는 이름이
+상단 라벨에 들어감
+
+
+레이아웃 나눌때 사이즈 비율 둘중 하나만 입력해야함
+android:weightSum="10"
+// 전체를 10개 구역으로 나눈다는 말
+
+ <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="#FFFF00"
+        android:orientation="horizontal"></LinearLayout>
+
+  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal"></LinearLayout>
+
+  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:orientation="horizontal">
+
+DialogTest 참조
+
+
+이벤트
+터치: 1초에 30번 콜백함수 호출, 
+       먼저 터치 이벤트를 확인하고 없으면 클릭 이벤트로 넘어감
+클릭: x, y 좌표 눌렀음
+더블클릭: 웹에만 존재
+롱클릭: 0.3초 이상 누르면 클릭이벤트가 롱클릭 이벤트로 전환
+스와이프: 웹에서의 드래그, 앱에선 스와이프라고 함

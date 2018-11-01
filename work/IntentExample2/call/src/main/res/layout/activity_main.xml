@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:id="@+id/activity_main"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="com.example.call.MainActivity">
+
+    <Button
+        android:text="전화걸기"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:id="@+id/callPhone"
+        android:layout_below="@+id/editText"
+        android:layout_toLeftOf="@+id/callDialer"
+        android:layout_toStartOf="@+id/callDialer"
+        android:layout_marginRight="17dp"
+        android:layout_marginEnd="17dp" />
+
+    <Button
+        android:text="다이얼러호출"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/callDialer"
+        android:layout_alignBaseline="@+id/callPhone"
+        android:layout_alignBottom="@+id/callPhone"
+        android:layout_alignRight="@+id/editText"
+        android:layout_alignEnd="@+id/editText"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:hint="전번을 입력하세요."
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:inputType="phone" />
+</RelativeLayout>
