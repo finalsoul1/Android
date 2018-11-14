@@ -22,7 +22,7 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
         app:backgroundTint="@color/colorAccent"
-        android:src="@drawble/ic_content_new"
+        android:src="@drawable/ic_content_new"
         />
 
 </RelativeLayout>
