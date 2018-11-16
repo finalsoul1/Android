@@ -1,0 +1,4 @@
+안드로이드 placeholder
+코드로는 setHint(int)에 string.xml에 미리 정의된 string id를 넣어주면 되구요. 
+xml에서는 android:hint="하고싶은말" 이렇게하시면 됩니다.
+
